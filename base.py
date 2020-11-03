@@ -41,11 +41,11 @@ class Screenshots:
         
     #Checks if its in Portuguese version of the site and if not, make the change    
     def check_language(self):
-        language = self.driver.find_element_by_xpath('/html/body/span[1]/div/header/div[1]/div[3]/div[1]/div/div/a/span[2]').text
+        language = self.driver.find_element_by_xpath('/html/body/span[1]/div[1]/header[1]/div[1]/div[3]/div[1]/div[1]/div[1]/span[1]/a[1]/span[2]').text
         if language != 'PT' or language != 'pt':
             print('Setting language to Portuguese')
-            self.driver.find_element_by_xpath('/html/body/span[1]/div/header/div[1]/div[3]/div[1]/div/div/a/span[2]').click()
-            self.driver.find_element_by_xpath('/html/body/span[1]/div/header/div[1]/div[3]/div[1]/div/div/div/div[2]/ul/li[3]/a').click()
+            self.driver.find_element_by_xpath('/html/body/span[1]/div/header/div[1]/div[3]/div[1]/div/div/span/a/span[2]').click()
+            self.driver.find_element_by_xpath('/html/body/span[1]/div/header/div[1]/div[3]/div[1]/div/div/div/span/div[1]/ul/li[3]/a').click()
         else:
             print('Right site language!')
 
