@@ -161,7 +161,7 @@ class Screenshots:
         sleep(2)
         #xpath above for debuging without premium account
         #self.driver.find_element_by_xpath('/html/body/div[2]/div/div[2]/div[1]/div[1]/div[3]/div/div/section/div/div/section/a[2]').click()
-        self.driver.find_element_by_xpath('/html/body/div[2]/div/div[2]/div[1]/div[1]/div[3]/div/div/section/div/div/section/a').click()
+        self.driver.find_element_by_xpath('/html/body/div[2]/div/div[2]/div[1]/div[1]/div/div/div/section/div/div/section/a').click()
         print("Read page done")
         sleep(7)
         percentage_read, pagina, paginafinal = self.check_percentageIsZero()    #checks the percentage read and if != 0
